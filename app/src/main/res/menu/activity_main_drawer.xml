@@ -3,18 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/general_tabs" android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_internet"
+            android:icon="@drawable/ic_baseline_signal_wifi_4_bar_24"
+            android:title="@string/menu_internet_status" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="@string/menu_info" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_abacus"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="@string/menu_abacus" />
+    </group>
+
+    <group android:id="@+id/user_tabs" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_form"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="@string/menu_form" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_profile" />
     </group>
 </menu>
