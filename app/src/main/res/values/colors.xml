@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="tp2_red">#DC1300</color>
+    <color name="tp2_button">#626262</color>
+    <color name="success">#18FD3B</color>
 </resources>

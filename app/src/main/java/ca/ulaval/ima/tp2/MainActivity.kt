@@ -36,6 +36,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navView: NavigationView = findViewById(R.id.nav_view)
         navView.setNavigationItemSelectedListener(this)
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.nav_host_fragment, InfosFragment())
+        transaction.commit()
+        supportActionBar?.title = getString(R.string.menu_info)
     }
 
     override fun onBackPressed() {
@@ -55,22 +60,24 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val id = item.getItemId()
-        when (id) {
+        when (item.itemId) {
             R.id.nav_internet -> {
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.nav_host_fragment, InternetFragment())
                 transaction.commit()
+                supportActionBar?.title = getString(R.string.menu_internet_status)
             }
             R.id.nav_info -> {
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.nav_host_fragment, InfosFragment())
                 transaction.commit()
+                supportActionBar?.title = getString(R.string.menu_info)
             }
             R.id.nav_abacus -> {
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.nav_host_fragment, AbacusFragment())
                 transaction.commit()
+                supportActionBar?.title = getString(R.string.menu_abacus)
             }
             // TODO : implement user navigation fragments
             /*R.id.nav_form -> {

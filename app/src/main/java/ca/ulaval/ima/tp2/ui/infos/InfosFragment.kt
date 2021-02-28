@@ -15,7 +15,7 @@ class InfosFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        return inflater.inflate(R.layout.fragment_infos, container, false)
         // val textView: TextView = root.findViewById(R.id.text_home)
     }
 }
