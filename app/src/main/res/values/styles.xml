@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Slider">
+        <item name="trackColor">#777777</item>
+        <item name="trackHeight">6dp</item>
+        <item name="trackCornerRadius">20dp</item>
+        <item name="thumbRadius">15dp</item>
+        <item name="thumbColor">#DC1300</item>
+        <item name="tickVisible">false</item>
+    </style>
+
+    <style name="SliderResult">
+        <item name="trackColor">#777777</item>
+        <item name="trackHeight">6dp</item>
+        <item name="trackCornerRadius">20dp</item>
+        <item name="thumbRadius">15dp</item>
+        <item name="thumbColor">#C9C9C9</item>
+        <item name="tickVisible">false</item>
+    </style>
+
+    <style name="AbacusSliderText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#DC1300</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
