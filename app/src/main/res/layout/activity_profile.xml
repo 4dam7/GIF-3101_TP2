@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.infos.ProfileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <GridLayout
+        android:id="@+id/profileCard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="40dp"
+        android:paddingEnd="40dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:background="#E6E6E6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="prénom :"/>
+    <TextView
+        android:id="@+id/firstname_placeholder"
+        android:textSize="14sp"
+        android:layout_gravity="end"
+        android:text=""/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="nom :"/>
+        <TextView
+            android:id="@+id/lastname_placeholder"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:text=""/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="date de naissance :"/>
+        <TextView
+            android:id="@+id/birthdate_placeholder"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:text=""/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="sexe :"/>
+        <TextView
+            android:id="@+id/gender_placeholder"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:text=""/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="programme :"/>
+        <TextView
+            android:id="@+id/program_placeholder"
+            android:textSize="14sp"
+            android:layout_gravity="end"
+            android:text=""/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/descriptionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileCard"
+        android:text="description :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descriptionText" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
