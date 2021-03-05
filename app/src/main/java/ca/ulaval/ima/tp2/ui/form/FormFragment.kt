@@ -64,12 +64,12 @@ class FormFragment : Fragment() {
                         birthDate.set(Calendar.DAY_OF_MONTH, dayOfMonth)
                         birthDate.set(Calendar.MONTH, monthOfYear)
                         birthDate.set(Calendar.YEAR, year)
-                        datePicker.setText(formatter.format(currentBirthDate.time))
                         currentBirthDate = birthDate
+                        datePicker.setText(formatter.format(currentBirthDate.time))
                     },
-                            profile?.birthDate?.get(Calendar.YEAR)!!,
-                            profile.birthDate?.get(Calendar.MONTH)!!,
-                            profile.birthDate?.get(Calendar.DAY_OF_MONTH)!!)
+                            currentBirthDate.get(Calendar.YEAR)!!,
+                            currentBirthDate.get(Calendar.MONTH)!!,
+                            currentBirthDate.get(Calendar.DAY_OF_MONTH)!!)
                 }?.show()
             }
 

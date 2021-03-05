@@ -112,7 +112,7 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="#E6E6E6"
         app:layout_constraintLeft_toRightOf="@+id/select_label"
@@ -120,16 +120,17 @@
 
     <Button
         android:id="@+id/submit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="229dp"
+        android:layout_height="41dp"
         android:layout_marginTop="80dp"
+        android:background="@color/black"
+        android:backgroundTint="#626262"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/spinner"
-        tools:layout_editor_absoluteX="133dp"
-        android:padding="10dp"
-        android:background="#626262"
         android:text="Soumettre"
-        tools:ignore="MissingConstraints" />
+        app:backgroundTint="#626262"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
